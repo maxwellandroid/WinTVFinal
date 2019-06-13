@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:background="@color/colorPrimaryDark">
+
+    </group>
+
+    <group android:id="@+id/my_id1"
+            android:background="@color/colorPrimaryDark">
+            <item
+                android:id="@+id/nav_india"
+                android:icon="@drawable/india_icon"
+                android:title="India" />
+        </group>
+
+    <group android:id="@+id/my_id2"
+        android:background="@color/colorPrimaryDark">
+        <item
+            android:id="@+id/nav_world"
+            android:icon="@drawable/globe_icon"
+            android:title="World" />
+    </group>
+
+    <group android:id="@+id/my_id3"
+        android:background="@color/colorPrimaryDark">
+        <item
+            android:id="@+id/nav_sports"
+            android:icon="@drawable/sports_icon"
+            android:title="Sports" />
+
+    </group>
+
+    <group android:id="@+id/my_id33"
+        android:background="@color/colorPrimaryDark">
+    <item
+        android:id="@+id/nav_tech"
+        android:icon="@drawable/tech_icon"
+        android:title="Technology" />
+    </group>
+
+    <group android:id="@+id/my_id4"
+        android:background="@color/colorPrimaryDark">
+
+        <item
+            android:id="@+id/nav_social"
+            android:icon="@drawable/share"
+            android:title="Social Media" />
+    </group>
+
+
+    <group android:id="@+id/my_id5"
+        android:background="@color/colorPrimaryDark">
+
+        <item
+            android:id="@+id/nav_upload"
+            android:icon="@drawable/upload_icon"
+            android:title="Upload News" />
+    </group>
+
+    <group android:id="@+id/my_id6"
+        android:background="@color/colorPrimaryDark"/>
+</menu>

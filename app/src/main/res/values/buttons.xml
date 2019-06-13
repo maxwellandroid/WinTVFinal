@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@drawable/fb</item>
+        <item>@drawable/fb</item>
+        <item>@drawable/fb</item>
+
+    </array>
+    <array name="colors">
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorPrimaryDark</item>
+
+    </array>
+</resources>

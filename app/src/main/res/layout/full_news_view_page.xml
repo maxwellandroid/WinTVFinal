@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/website"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="2pt"
+            android:textStyle="bold"
+            android:gravity="center|start"
+            android:id="@+id/date"
+            android:layout_marginLeft="2pt"
+            android:text="11-11-2018"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/win"
+            android:layout_weight="1"
+            android:padding="2pt"
+            android:layout_gravity="center"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="2pt"
+            android:textStyle="bold"
+            android:gravity="center|end"
+            android:id="@+id/time"
+            android:text="12.30 PM"
+            android:layout_marginRight="2pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:id="@+id/app"
+        android:visibility="gone"
+        app:elevation="0dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:layout_below="@+id/website"
+        android:layout_height="40dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbar_container">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginRight="10pt"
+                android:background="@color/colorPrimary"
+                app:popupTheme="@style/AppTheme.AppBarOverlay" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/back_arraw"
+                        android:gravity="center|start"
+                        android:id="@+id/rate"
+                        android:layout_width="40dp"
+                        android:layout_height="35dp" />
+
+                    <TextView
+                        android:layout_width="170dp"
+                        android:text="தொழில்நுட்பம் "
+                        android:textColor="@color/colorPrimaryDark"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:layout_marginRight="4pt"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent" />
+
+                    <ImageView
+                        android:src="@drawable/rate"
+                        android:id="@+id/share"
+                        android:visibility="gone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+
+        </FrameLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="2pt"
+            card_view:cardBackgroundColor="#fff"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardElevation="5dp">
+
+            <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:scaleType="fitXY"
+        android:onClick="sanjay"
+        android:paddingLeft="2pt"
+        android:paddingTop="2pt"
+        android:paddingRight="2pt"
+        android:src="@drawable/sample"
+        android:id="@+id/news_image"/>
+
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_marginTop="2pt"
+             android:src="@drawable/unfav"
+             android:layout_marginRight="2pt"
+             android:id="@+id/fav"
+             android:layout_gravity="end"
+             android:layout_height="30dp" />
+
+   </FrameLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:layout_marginTop="2pt"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:paddingLeft="2pt"
+                    android:textSize="6pt"
+                    android:textColor="#fff"
+                    android:id="@+id/news_time"
+                    android:text="22-Jan-2018"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center|end"
+                    android:textStyle="bold"
+                    android:textSize="6pt"
+                    android:paddingRight="2pt"
+                    android:gravity="end"
+                    android:id="@+id/section"
+                    android:textColor="#fff"
+                    android:text="தொழில்நுட்பம்"/>
+
+            </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+            <com.codesgood.views.JustifiedTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center|start"
+                android:layout_marginTop="2pt"
+                android:id="@+id/title"
+                android:paddingRight="2pt"
+                android:paddingLeft="2pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="நாடு முழுவதும் உள்ள தபால் துறை ஊழியர்களுக்கு புதிய சீருடை அறிமுகப்படுத்தப்பட்டுள்ளது..."/>
+
+
+        <com.codesgood.views.JustifiedTextView
+            android:text=""
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="2pt"
+            android:paddingRight="2pt"
+            android:paddingBottom="10pt"
+            android:paddingLeft="2pt"
+            android:id="@+id/full_news"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="7pt"/>
+         </LinearLayout>
+
+        </ScrollView>
+
+
+</LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        app:bmb_normalColor="@color/colorPrimary"
+        app:bmb_highlightedColor="@android:color/holo_blue_dark"
+        app:bmb_buttonEnum="textInsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_share"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_3_1"
+        app:bmb_showMoveEaseEnum="outExpo"
+        app:bmb_showScaleEaseEnum="outExpo"
+        app:bmb_showRotateEaseEnum="outExpo"
+        app:bmb_hideMoveEaseEnum="inExpo"
+        app:bmb_hideScaleEaseEnum="inExpo"
+        app:bmb_hideRotateEaseEnum="inExpo" />
+
+</RelativeLayout>

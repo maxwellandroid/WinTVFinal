@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.maxwell.win_news.Display_Favorite_news">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/website"
+        android:gravity="center"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="2pt"
+            android:textStyle="bold"
+            android:gravity="center|start"
+            android:id="@+id/date"
+            android:layout_marginLeft="2pt"
+            android:text="11-11-2018"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:src="@drawable/win"
+            android:layout_weight="1"
+            android:padding="2pt"
+            android:layout_gravity="center"
+            android:layout_height="35dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:padding="2pt"
+            android:textStyle="bold"
+            android:gravity="center|end"
+            android:id="@+id/time"
+            android:text="12.30 PM"
+            android:layout_marginRight="2pt"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="horizontal"
+        android:layout_height="30dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Favorite News"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:gravity="center"/>
+
+    </LinearLayout>
+    
+    
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_marginTop="4pt"
+        android:layout_height="match_parent"
+        android:id="@+id/fav_news_list_items"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/no_data"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/empty" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Currently there is no news in Favorite"/>
+
+    </LinearLayout>
+
+</LinearLayout>

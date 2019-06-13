@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="2pt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    <ImageView
+        android:id="@+id/news_image"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:paddingLeft="2pt"
+        android:paddingRight="2pt"
+        android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_marginLeft="2pt"
+            android:layout_marginRight="2pt"
+            android:layout_gravity="end"
+            android:id="@+id/close"
+            android:layout_height="30dp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="2pt"
+                android:paddingRight="2pt"
+                android:textStyle="bold"
+                android:id="@+id/news_title"
+                android:paddingTop="4pt"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text=""/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="2pt"
+                android:layout_marginLeft="45pt"
+                android:layout_marginRight="45pt"
+                android:background="@color/colorPrimary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text=""
+                android:padding="2pt"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:id="@+id/news_content"
+                android:textColor="#cccc"
+                android:layout_height="wrap_content" />
+
+
+
+
+    </LinearLayout>
+ </ScrollView>
+
+</LinearLayout>
+</LinearLayout>
